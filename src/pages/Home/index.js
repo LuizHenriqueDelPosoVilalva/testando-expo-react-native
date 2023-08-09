@@ -1,11 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+
+import Header from '../../components/Header';
+import Balance from '../../components/Balance';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Pagina Home</Text>
-      <StatusBar style="auto" />
+      <Header name ="Luiz Henrique"/>
+      <Balance saldo='15,452' gastos='754,27'/>
     </View>
   );
 }
@@ -13,8 +15,6 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fafafa',
   },
 });
