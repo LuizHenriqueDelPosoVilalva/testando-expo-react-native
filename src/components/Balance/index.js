@@ -24,7 +24,7 @@ export default function Balance({ saldo, gastos }) {
         <View style={styles.content}>
           <Text style={styles.currentSimbol}>R$</Text>
           <Text style={styles.expencices}>
-            {gastos}
+            {`-${gastos}`}
           </Text>
         </View>
       </View>
